@@ -1,0 +1,20 @@
+{
+  "name": "pixel-art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint js/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-htmlacademy": "0.4.2"
+  },
+  "engines": {
+    "node": "8.9"
+  }
+}
