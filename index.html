@@ -2,13 +2,53 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Pixel-Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <div class="container">
+    <header class="header">
+      <h1 class="heading">Пиксель - Арт</h1>
+    </header>
 
+    <main>
+      <section class="pixel-field">
+        <canvas class="canvas-draw" width="403" height="403"></canvas>
 
-<script src="js/main.js"></script>
+      </section>
+
+      <section class="elapsed-time">
+        Время:
+        <span class="elapsed-time__time">
+          00:00
+        </span>
+      </section>
+
+      <section class="controls">
+        <button class="controls__button controls__button--return">Повернуть</button>
+
+        <button class="controls__button controls__button--result">Результат</button>
+      </section>
+
+      <section class="output-result">
+        <canvas class="canvas-output" width="100px" height="100px"></canvas>
+
+        <div class="output-result__info">
+          Пикселей:
+          <span class="output-result__pixels">0</span>
+        </div>
+
+        <div class="output-result__info">
+          Время:
+          <span class="output-result__time">00:00</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

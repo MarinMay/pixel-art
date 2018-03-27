@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 595px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Myriad Pro', Helvetica, Arial, sans-serif;
+  font-size: 6.89vw;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 596px) {
+  .container {
+    font-size: 42px;
+  }
+}
+
+.header {
+  display: flex;
+  height: 66.4vw;
+  padding: 6.55vw 6.05vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  letter-spacing: 0;
+  font-weight: bold;
+  background-image: url("../img/cat.jpg");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 596px) {
+  .header {
+    height: 396px;
+    padding: 39px 36px;
+  }
+}
+
+.heading {
+  margin: 0;
+  color: #fff;
+  font-size: 6.89vw;
+  letter-spacing: 0;
+}
+
+@media (min-width: 596px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+
+.pixel-field {
+  padding: 10.59vw 16.13vw 2vw;
+  cursor: pointer;
+}
+
+@media (min-width: 596px) {
+  .pixel-field {
+    padding: 65px 96px 12px;
+  }
+}
+
+.canvas-draw {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg-pixel-fields.png");
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.elapsed-time {
+  margin-bottom: 5.37vw;
+  padding-top: 2.5vw;
+}
+
+@media (min-width: 596px) {
+  .elapsed-time {
+    margin-bottom: 32px;
+    padding-top: 15px;
+  }
+}
+
+.elapsed-time__time {
+  display: block;
+}
+
+.controls {
+  padding-bottom: 10.08vw;
+}
+
+
+@media (min-width: 596px) {
+  .controls {
+    padding-bottom: 60px;
+  }
+}
+
+.controls__button {
+  width: 67.73%;
+  margin-bottom: 5.38vw;
+  padding: 5.38vw 5vw 5.88vw;
+  letter-spacing: -0.02em;
+  background-color: #e8e8e8;
+  border: none;
+  cursor: pointer;
+}
+
+.controls__button:hover,
+.controls__button:focus {
+  background-color: #d0cfcf;
+}
+
+@media (min-width: 596px) {
+  .controls__button {
+    padding: 32px 30px 35px;
+  }
+}
+
+.output-result {
+  padding: 4.87vw 4.87vw 3.53vw 6.89vw;
+  background-color: #e8e8e8;
+}
+
+@media (min-width: 596px) {
+  .output-result {
+    padding: 29px 29px 21px 41px;
+  }
+}
+
+.canvas-output {
+  margin: 0 auto 0.67vw;
+  background-color: #90c4b8;
+}
+
+@media (min-width: 596px) {
+  .output-result {
+    margin-bottom: 4px;
+  }
+}
