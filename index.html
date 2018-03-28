@@ -9,6 +9,10 @@
 </head>
 
 <body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <rect class="pixel-blue" id="rect-template" width="100" height="100"></rect>
+  </svg>
+
   <div class="container">
     <header class="header">
       <h1 class="heading">Пиксель - Арт</h1>
@@ -16,8 +20,8 @@
 
     <main>
       <section class="pixel-field">
-        <canvas class="canvas-draw" width="403" height="403"></canvas>
-
+        <svg class="drawing-area" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 403 403">
+        </svg>
       </section>
 
       <section class="elapsed-time">
@@ -28,7 +32,7 @@
       </section>
 
       <section class="controls">
-        <button class="controls__button controls__button--return">Повернуть</button>
+        <button class="controls__button controls__button-0-return">Повернуть</button>
 
         <button class="controls__button controls__button--result">Результат</button>
       </section>
@@ -49,6 +53,6 @@
     </main>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/draw.js"></script>
 </body>
 </html>

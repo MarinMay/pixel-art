@@ -69,13 +69,17 @@ body {
   }
 }
 
-.canvas-draw {
+.drawing-area {
   width: 100%;
   height: auto;
-  background-image: url("../img/bg-pixel-fields.png");
-  background-position: center center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+}
+
+.pixel-blue {
+  fill: #90c4b8;
+}
+
+.pixel-black {
+  fill: #000;
 }
 
 .elapsed-time {
