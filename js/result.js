@@ -5,14 +5,12 @@
   var buttonResult = document.querySelector('.controls__button--result');
   var elapsedTime = document.querySelector('.elapsed-time__time');
 
-
-
   function onButtonResultClick() {
     outputTime.textContent = elapsedTime.textContent;
     window.timer.clearTimer();
+    window.canvas.drawCanvasResult();
     outputPixels.textContent = window.draw.drawingResult();
   }
 
   buttonResult.addEventListener('click', onButtonResultClick);
-
 })();

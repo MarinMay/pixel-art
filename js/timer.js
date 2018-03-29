@@ -21,6 +21,7 @@
       min++;
     }
 
+    // подставляет значение в элементы
     elapsedMinutes.textContent = formatsTime(min);
     elapsedSeconds.textContent = formatsTime(sec);
   }
