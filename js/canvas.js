@@ -6,6 +6,35 @@
   var canvas = document.querySelector('.canvas-output');
   var ctx = canvas.getContext('2d');
 
+
+  function drawDivInCanvas() {
+    var svgCanvasSource = document.querySelector('.drawing-area');
+    // копирует его
+    var svgContent = svgCanvasSource.cloneNode('true');
+    // удаляет трансформацию - иначе не рисует его на канвасе
+    svgContent.removeAttribute('style');
+
+    var data = '<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">' +
+            '<foreignObject width="100%" height="100%">' +
+            '<div xmlns="http://www.w3.org/1999/xhtml">' +
+             svgContent.innerHTML +
+            '</foreignObject>' +
+            '</svg>';
+    var DOMURL = window.URL || window.webkitURL || window;
+
+    var img = new Image();
+    var svg = new Blob([data], {type: 'image/svg+xml'});
+    var url = DOMURL.createObjectURL(svg);
+
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0);
+      DOMURL.revokeObjectURL(url);
+    };
+
+    img.src = url;
+    console.log(img);
+  }
+
   // поворачивает канвас
   function canvasRotate(deg) {
     ctx.rotate(degInRad(deg));
@@ -51,6 +80,7 @@
   canvas.addEventListener('animationend', onAnimationEnd, false);
 
   window.canvas = {
+    drawDivInCanvas: drawDivInCanvas,
     drawCanvasResult: drawCanvasResult,
     canvasRotate: canvasRotate
   };

@@ -8,7 +8,7 @@
   function onButtonResultClick() {
     outputTime.textContent = elapsedTime.textContent;
     window.timer.clearTimer();
-    window.canvas.drawCanvasResult();
+    window.canvas.drawDivInCanvas();
     outputPixels.textContent = window.draw.drawingResult();
   }
 

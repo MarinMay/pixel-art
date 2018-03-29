@@ -17,6 +17,7 @@
 
     for (var i = 0; i < rectCount; i++) {
       var rectElement = document.createElement('div');
+      rectElement.style.backgroundColor = '#eeeeee';
       rectElement.classList.add('pixel-blue');
 
       fragment.appendChild(rectElement);
@@ -27,6 +28,7 @@
   function onRectClick(evt) {
     if (evt.target.classList.contains('pixel-blue')) {
       evt.target.classList.toggle('pixel-black');
+      evt.target.style.backgroundColor = '#000000';
     }
   }
 
@@ -36,7 +38,7 @@
     var blackPixelsCount = 0;
 
     for (var i = 0; i < rects.length; i++) {
-      if (rects[i].contain('pixel-black')) {
+      if (rects[i].classList.contains('pixel-black')) {
         blackPixelsCount++;
         rects[i].classList.remove('pixel-black');
       }
