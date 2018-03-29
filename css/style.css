@@ -80,16 +80,27 @@ body {
 }
 
 .drawing-area {
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 67.73vw;
+  height: 67.73vw;
+  max-width: 403px;
+  max-height: 403px;
+}
+
+.drawing-area div {
+  width: 24.5%;
+  height: 24.5%;
 }
 
 .pixel-blue {
-  fill: #90c4b8;
+  background-color: #90c4b8;
 }
 
 .pixel-black {
-  fill: #000;
+  background-color: #000;
 }
 
 .elapsed-time {
