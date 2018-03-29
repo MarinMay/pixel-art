@@ -160,18 +160,18 @@ body {
 
 @-webkit-keyframes canvas-result {
   0% {
-    -webkit-transform: scale(3.5) translateY(-280%);
-            transform: scale(3.5) translateY(-280%);
-  }
-
-  12% {
-    -webkit-transform: scale(4.2) translateY(-280%);
-            transform: scale(4.2) translateY(-280%);
+    -webkit-transform: scale(2) translateY(-250%);
+            transform: scale(2) translateY(-250%);
   }
 
   15% {
-    -webkit-transform: scale(4.2) translateY(-260%);
-            transform: scale(4.2) translateY(-260%);
+    -webkit-transform: scale(2.6) translateY(-200%);
+            transform: scale(2.6) translateY(-200%);
+  }
+
+  30% {
+    -webkit-transform: scale(2.2) translateY(-170%);
+            transform: scale(2.2) translateY(-170%);
   }
 
   100% {
@@ -182,18 +182,18 @@ body {
 
 @keyframes canvas-result {
   0% {
-    -webkit-transform: scale(3.5) translateY(-280%);
-            transform: scale(3.5) translateY(-280%);
-  }
-
-  12% {
-    -webkit-transform: scale(4.2) translateY(-280%);
-            transform: scale(4.2) translateY(-280%);
+    -webkit-transform: scale(2) translateY(-250%);
+            transform: scale(2) translateY(-250%);
   }
 
   15% {
-    -webkit-transform: scale(4.2) translateY(-260%);
-            transform: scale(4.2) translateY(-260%);
+    -webkit-transform: scale(2.6) translateY(-200%);
+            transform: scale(2.6) translateY(-200%);
+  }
+
+  30% {
+    -webkit-transform: scale(2.2) translateY(-170%);
+            transform: scale(2.2) translateY(-170%);
   }
 
   100% {
@@ -203,8 +203,8 @@ body {
 }
 
 .canvas-output-animation {
-  -webkit-animation: canvas-result 1s ease-in;
-          animation: canvas-result 1s ease-in;
+  -webkit-animation: canvas-result 0.8s ease-in;
+          animation: canvas-result 0.8s ease-in;
 }
 
 @media (min-width: 596px) {
