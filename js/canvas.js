@@ -36,6 +36,7 @@
 
     // добавляет источник картинки из svg в канвас
     img.src = 'data:image/svg+xml;base64,' + btoa(svgContent.outerHTML);
+
     // добавляет анимацию
     canvas.classList.add('canvas-output-animation');
   }

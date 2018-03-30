@@ -57,9 +57,9 @@ body {
 
 .heading {
   margin: 0;
-  color: #fff;
   font-size: 6.89vw;
   letter-spacing: 0;
+  color: #fff;
 }
 
 @media (min-width: 596px) {
@@ -84,14 +84,6 @@ body {
   height: auto;
 }
 
-.pixel-blue {
-  fill: #90c4b8;
-}
-
-.pixel-black {
-  fill: #000;
-}
-
 .elapsed-time {
   margin-bottom: 5.37vw;
   padding-top: 2.5vw;
@@ -111,7 +103,6 @@ body {
 .controls {
   padding-bottom: 10.08vw;
 }
-
 
 @media (min-width: 596px) {
   .controls {

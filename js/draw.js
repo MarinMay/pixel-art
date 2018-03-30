@@ -74,8 +74,11 @@
   function onButtonReturnClick() {
     // увеличивает угол поворота
     degreeTransform = degreeTransform + ANGLE_OF_ROTATION;
-    // повораяивает канвас
+
+    // поворачивает канвас
     window.canvas.canvasRotate(ANGLE_OF_ROTATION);
+
+    // обнуляет угол
     if (degreeTransform === 360) {
       degreeTransform = 0;
     }
@@ -88,7 +91,6 @@
   drawingArea.appendChild(fragment);
 
   drawingArea.addEventListener('click', onRectClick);
-
   buttonReturn.addEventListener('click', onButtonReturnClick);
 
   window.draw = {
